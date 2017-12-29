@@ -10,6 +10,7 @@ script:
   - lyx --export pdflatex example.lyx
   - echo -e "% The Author\n$(cat example.tex)" > example.tex
   - echo -e "% My Title\n$(cat example.tex)" > example.tex
+  - cat example.tex
   - pandoc example.tex -o example.epub
   - epubcheck example.epub
   # In one go, bad idea
