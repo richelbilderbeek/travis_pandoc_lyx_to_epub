@@ -8,6 +8,7 @@ install:
 
 script:
   - lyx --export pdflatex example.lyx
+  - cat example.tex
   - echo -e "% The Author\n$(cat example.tex)" > example.tex
   - echo -e "% My Title\n$(cat example.tex)" > example.tex
   - cat example.tex
