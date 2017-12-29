@@ -1,5 +1,5 @@
 install:
-  - sudo apt-get install pandoc texlive-latex-recommended texlive-latex-extra texlive-fonts-extra texlive-fonts-recommended epubcheck
+  - sudo apt-get install lyx pandoc texlive-latex-recommended texlive-latex-extra texlive-fonts-extra texlive-fonts-recommended epubcheck
 
 script:
   - lyx --export pdflatex example.lyx
