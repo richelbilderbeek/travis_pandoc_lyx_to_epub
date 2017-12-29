@@ -70,6 +70,14 @@
 
 \begin_body
 
+\begin_layout Title
+My Title
+\end_layout
+
+\begin_layout Author
+The author
+\end_layout
+
 \begin_layout Standard
 Hello world
 \end_layout

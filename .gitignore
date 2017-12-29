@@ -27,3 +27,4 @@
 *.out
 *.app
 travis_lyx.pdf
+*.lyx~
