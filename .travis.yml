@@ -9,8 +9,8 @@ install:
 script:
   - lyx --export pdflatex example.lyx
   - cat example.tex
-  - echo "% The Author" > example_tmp.tex
-  - echo "% My Title" >> example_tmp.tex
+  - echo "% My Title" > example_tmp.tex
+  - echo "% The Author" >> example_tmp.tex
   - cat example.tex >> example_tmp.tex
   - mv example_tmp.tex example.tex
   - cat example.tex
