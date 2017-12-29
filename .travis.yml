@@ -9,9 +9,10 @@ install:
 script:
   - lyx --export pdflatex example.lyx
   - cat example.tex
-  - echo -e "% The Author\n$(cat example.tex)" > example_2.tex
-  - echo -e "% My Title\n$(cat example_2.tex)" > example_3.tex
-  - cp example_3.tex example.tex
+  - echo "% The Author" > example_tmp.tex
+  - echo "% My Title" >> example_tmp.tex
+  - cat example.tex >> example_tmp.tex
+  - mv example_tmp.tex example.tex
   - cat example.tex
   - pandoc example.tex -o example.epub
   - epubcheck example.epub
