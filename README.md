@@ -10,7 +10,8 @@ This GitHub is part of [the Travis Tutorial](https://github.com/richelbilderbeek
 
 ## Less specific setup
 
- * [![Build Status](https://travis-ci.org/richelbilderbeek/travis_pandoc_to_epub.svg?branch=master)](https://travis-ci.org/richelbilderbeek/travis_pandoc_to_epub) [travis_pandoc_to_epub](https://github.com/richelbilderbeek/travis_pandoc_to_epub): convert a file to EPUB
+ * [![Build Status](https://travis-ci.org/richelbilderbeek/travis_pandoc_to_epub.svg?branch=master)](https://travis-ci.org/richelbilderbeek/travis_pandoc_to_epub) [travis_pandoc_to_epub](https://github.com/richelbilderbeek/travis_pandoc_to_epub): convert any file to EPUB using `pandoc`
+ * [![Build Status](https://travis-ci.org/richelbilderbeek/travis_lyx_to_epub.svg?branch=master)](https://travis-ci.org/richelbilderbeek/travis_lyx_to_epub) [travis_lyx_to_epub](https://github.com/richelbilderbeek/travis_lyx_to_epub): convert a LyX file to EPUB
 
 ## Less complex setups
 
