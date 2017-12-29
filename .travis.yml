@@ -7,18 +7,9 @@ install:
   - sudo apt-get install lyx pandoc texlive-latex-recommended texlive-latex-extra texlive-fonts-extra texlive-fonts-recommended epubcheck
 
 script:
-  - lyx --export pdflatex example.lyx
-  - cat example.tex
-  # Dirty hack that does not work
-  #- echo "% My Title" > example_tmp.tex
-  #- echo "% The Author" >> example_tmp.tex
-  #- cat example.tex >> example_tmp.tex
-  #- mv example_tmp.tex example.tex
-  #- cat example.tex
-  - pandoc example.tex -o example.epub
-  - epubcheck example.epub
-  # In one go, bad idea
-  #- echo -e "% My Title\n$(cat example.lyx)" > example.lyx
-  #- echo -e "% The Author\n$(cat example.lyx)" > example.lyx
-  #- pandoc example.lyx -o example.epub
+  #- lyx --export pdflatex example.lyx
+  #- pandoc example.tex -o example.epub
   #- epubcheck example.epub
+  # In one go, bad idea
+  - pandoc example.lyx -o example.epub
+  - epubcheck example.epub
