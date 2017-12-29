@@ -78,6 +78,10 @@ My Title
 The author
 \end_layout
 
+\begin_layout Section
+My first section
+\end_layout
+
 \begin_layout Standard
 Hello world
 \end_layout
