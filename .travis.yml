@@ -2,5 +2,7 @@ install:
   - sudo apt-get install pandoc texlive-latex-recommended texlive-latex-extra texlive-fonts-extra texlive-fonts-recommended epubcheck
 
 script:
+  - echo -e "% My Title\n$(cat example.lyx)" > example.lyx
+  - echo -e "% The Author\n$(cat example.lyx)" > example.lyx
   - pandoc example.lyx -o example.epub
   - epubcheck example.epub
